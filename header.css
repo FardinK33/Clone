@@ -1,0 +1,138 @@
+.header{
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(214, 214, 214, 0.123);
+    z-index: 1;
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+}
+
+.ham-menu{
+    width: 24px;
+    margin: 0 20px 0 24px;
+}
+
+.youtubeLogo{
+    width: 92px;
+    margin-left: 10px;
+}
+
+.middle{
+    width: 500px;
+    /* background-color: lightpink; */
+    display: flex;
+}
+
+input{
+    flex: 1;
+    height: 36px;
+    font-size: 16px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border: 1px solid rgb(49, 49, 49);
+    padding-left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    font-family: 'Signika Negative', Arial;
+    font-size: 16px;
+    /* padding-left: 10px; */
+}
+
+.search-btn{
+    height: 40px;
+    width: 60px;
+    border: 1px solid rgb(49, 49, 49);
+    background-color: #333333;
+    margin-left: -1px;
+    margin-right: 15px;
+}
+
+.search-img{
+    width: 25px;
+    margin-top: 2px;
+}
+
+.mic-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(27, 27, 27);
+    margin-right: 10px;
+}
+
+.mic-img{
+    width: 22px;
+    margin-top: 4px;
+}
+
+.item3{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.left-img{
+    width: 26px;
+    position: relative;
+    /* filter: invert(100%); */
+}
+
+.mic-btn:hover, 
+.search-btn:hover,
+.left-img:hover,
+.youtubeLogo:hover{
+    cursor: pointer;
+}
+
+.notification{
+    /* background-color: blanchedalmond; */
+    position: relative;
+}
+
+.bell-icon{
+    padding-top: 3px;
+}
+
+.count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(184, 0, 0);
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50px;
+}
+
+
+.profile-img{
+    width: 34px;
+    border-radius: 17px;
+    position: relative;
+    cursor: pointer;
+}
+
+.item1 img, .left-img, .search-img, .mic-img{
+    filter: invert(100%);
+}
